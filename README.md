@@ -1,7 +1,5 @@
 ## MeteorSentry(irelander:meteor-sentry Meteor Package )
 
-#### ##Import ! Don't use production level.
-
 This package is a wrapper for sentry library. It allows you to simply use latest Sentry SDK on both client and a server in your meteor application.
 
 This package is MIT Licensed.
@@ -39,13 +37,28 @@ To use this package, call the init function as early as possible in your app.
 		- `excludesArguments(boolean)` - if you set true, the arguments will not be logged .
 		- `excludesResult(boolean)` - if you set true, method return result will not be logged.
 
-\### Example
-
+### Example ( Client )
 ```javascript
+
+
 import MeteorSentry from 'meteor/irelander:meteor-sentry';
 
 const sentryConfig = {
-	dsn : "http://86578021937043139c825c9861781c9a@localhost/2",
+	dsn : "http://{uuid}@http://{yourSentryDomain}/{sentryAppId}",
+	...
+};
+```
+
+
+### Example ( Server )
+
+```javascript
+
+
+import MeteorSentry from 'meteor/irelander:meteor-sentry';
+
+const sentryConfig = {
+	dsn : "http://{uuid}@http://{yourSentryDomain}/{sentryAppId}",
 	...
 };
 
@@ -143,9 +156,19 @@ Logging with level `critical`
 		 - `name(string)` - tag name.
 		 - `value(any)` - tag value.
 
+## Properties
+		 
+### MeteorSentry.rawSentry
+
+This is raw Sentry Object.
+
 
 ## Todo
 
 - Client Integration add ( Vue / React )
 - Internal Method Tracking
 - Server route logging
+
+## Contributing
+
+If anyone has a good idea, please PR.

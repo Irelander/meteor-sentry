@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'meteor-sentry',
+  name: 'irelander:meteor-sentry',
   version: '0.0.1',
   summary: 'Sentry integration Meteor package.',
   git: 'https://github.com/Irelander/meteor-sentry.git',
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('meteor-sentry');
+  api.use('irelander:meteor-sentry');
   api.mainModule('meteor-sentry-tests.js');
 });
 

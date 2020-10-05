@@ -4,6 +4,11 @@ This package is a wrapper for sentry library. It allows you to simply use latest
 
 This package is MIT Licensed.
 
+## Change Log
+
+ - 2020-10-05
+   - change ecmascript package version support 0.10.0 or newer
+
 ## Installation
 
 ```shell script

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'irelander:meteor-sentry',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Sentry integration Meteor package.',
   git: 'https://github.com/Irelander/meteor-sentry.git',
   documentation: 'README.md'
@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.11');
-  api.use('ecmascript');
+  api.use('ecmascript@0.10.0');
   api.use('seba:method-hooks@3.0.2');
   api.mainModule('meteor-sentry-server.js', 'server');
   api.mainModule('meteor-sentry-client.js', 'client');

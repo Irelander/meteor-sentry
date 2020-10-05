@@ -7,7 +7,8 @@ This package is MIT Licensed.
 ## Change Log
 
  - 2020-10-05
-   - change ecmascript package version support 0.10.0 or newer
+   - change ecmascript package version support 0.10.0 or newer.
+   - fixed server options field name. 
 
 ## Installation
 

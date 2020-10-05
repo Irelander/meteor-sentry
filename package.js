@@ -1,6 +1,6 @@
 Package.describe({
   name: 'irelander:meteor-sentry',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Sentry integration Meteor package.',
   git: 'https://github.com/Irelander/meteor-sentry.git',
   documentation: 'README.md'

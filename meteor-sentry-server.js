@@ -133,7 +133,7 @@ const SentryServer = {
 
         const {
             inactiveLogging = {},
-            methodOption,
+            methodOptions,
         } = options;
 
         const {
@@ -142,7 +142,7 @@ const SentryServer = {
 
 
         if (!methods){
-            initializeMethods(methodOption);
+            initializeMethods(methodOptions);
         }
 
         this.rawSentry = Sentry;
